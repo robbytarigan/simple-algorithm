@@ -3,7 +3,7 @@
  * For example, SortedSearch.CountNumbers(new int[] { 1, 3, 5, 7 }, 4) should return 2 because there are two array elements less than 4.
  */
 
-using System.Linq;
+using System;
 
 namespace SimpleAlgorithm
 {
@@ -16,9 +16,19 @@ namespace SimpleAlgorithm
                 return 0;
             }
 
-            return sortedArray.Count(m => m < lessThan);
+            int index = Array.BinarySearch(sortedArray, lessThan);
+
+            if (index >= 0)
+            {
+                return index;
+            }
+            else
+            {
+                return ~index;
+            }
         }
 
+        
         //public static void Main(string[] args)
         //{
         //    Console.WriteLine(SortedSearch.CountNumbers(new int[] { 1, 3, 5, 7 }, 4));
