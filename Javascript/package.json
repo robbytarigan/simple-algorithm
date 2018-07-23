@@ -1,0 +1,16 @@
+{
+  "name": "simple-algorithm",
+  "version": "1.0.0",
+  "description": "Simple Algorithm in Javascript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "algorithm"
+  ],
+  "author": "Robby Tarigan",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.1.0"
+  }
+}
