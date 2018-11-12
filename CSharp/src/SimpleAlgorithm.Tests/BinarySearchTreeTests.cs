@@ -21,7 +21,7 @@ namespace SimpleAlgorithm.Tests
         public void Contains_should_return_correct_value(bool expected, int value)
         {
             var result = BinarySearchTree.Contains(n2, value);
-            Assert.Equal(result, result);
+            Assert.Equal(expected, result);
         }
     }
 }
